@@ -9,7 +9,8 @@
         "start:myui5app": "npm start --workspace myui5app"
     },
     "dependencies": {
-        "mbt": "^1"
+        "mbt": "^1",
+        "yo": "^5.1.0"
     },
     "workspaces": [
         "myui5app"

@@ -8,6 +8,12 @@
             "service": "sap-approuter-userapi"
         },
         {
+			"source": "^/V2/(.*)$",
+			"authenticationType": "none",
+			"destination": "Northwind",
+			"csrfProtection": false
+		},
+        {
             "source": "^(.*)$",
             "target": "$1",
             "service": "html5-apps-repo-rt",
