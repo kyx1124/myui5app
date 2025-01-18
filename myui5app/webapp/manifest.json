@@ -109,7 +109,7 @@
                 },
                 {
                     "name": "RouteProductDetail",
-                    "pattern": "productdetail",
+                    "pattern": "productdetail/{productId}",
                     "target": [
                         "TargetProductDetail"
                     ]
