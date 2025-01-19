@@ -1,6 +1,7 @@
 sap.ui.define([
-    "tutorial/products/controller/BaseController",
-    "sap/m/MessageToast"
+    // "tutorial/products/controller/BaseController",
+    // "sap/m/MessageToast"
+     "sap/ui/core/mvc/Controller"
   ], 
   function (Controller, MessageToast) {
     "use strict";
@@ -9,7 +10,7 @@ sap.ui.define([
             onInit: function() {
                 const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
                 oRouter.getRoute("RouteProductDetail").attachMatched(this._onRouteMatched, this);
-            },
+            },     
 
             _onRouteMatched: function(oEvent) {
                 const iProductId = oEvent.getParameter("arguments").productId;
